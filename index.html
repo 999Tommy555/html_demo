@@ -9,11 +9,76 @@
         body {
             text-align: center;
             background-color: rgb(240, 201, 153);
+            font-family: 標楷體, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         .sub-title {
             background-color: rgb(0, 235, 235);
             color: rgb(24, 24, 155);
+        }
+
+        /* . -> class */
+        .content {
+            background-color: rgb(122, 173, 218);
+            padding: 48px 24px;
+        }
+
+        /* # -> id */
+        #image {
+            border: 2px black solid;
+            background-color: rgb(61, 61, 141);
+            padding: 48px 24px;
+        }
+
+        #image img {
+            margin: 12px;
+            width: 28%;
+            border-radius: 12px;
+        }
+
+        #bmitable {
+            height: 400px;
+            width: 60%;
+            margin: 12px auto;
+        }
+
+        #bmitable th {
+            background-color: rgb(127, 231, 24);
+        }
+
+        #bmitable td {
+            background-color: rgb(95, 120, 167);
+        }
+
+        h2 {
+            display: inline;
+            width: 800px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid darkblue;
+
+        }
+
+        #form {
+            width: 500px;
+            border-radius: 6px;
+            background-color: rgb(148, 102, 190);
+            margin: 0 auto;
+            padding: 24px 6px;
+        }
+
+        #form input {
+            text-align: center;
+        }
+
+        #form button {
+            background-color: rgb(255, 208, 91);
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
         }
     </style>
 </head>
@@ -22,18 +87,23 @@
     <!-- 內容區 -->
     <h1 style="background-color: rgb(178, 182, 78);color: rgb(24, 78, 60);">何謂健身?</h1>
     <img width="100%" src="https://img.88icon.com/download/jpg/201911/3ec29f60ce18f9017a72a867455aa606.jpg!con" alt="">
-    <h3>
-        健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
-        <br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-    </h3>
-    <p>
-        <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
-            舞臺上或者是電影螢幕上綻放光彩。</em>
-        <b>
-            <u>答案就是堅持運動健身!</u>
-        </b>
-    </p>
+
+    <div class="content">
+
+        <h3>
+            健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
+            <br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+        </h3>
+        <p>
+            <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。<br>
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
+                舞臺上或者是電影螢幕上綻放光彩。</em>
+            <b>
+                <u>答案就是堅持運動健身!</u>
+            </b>
+        </p>
+
+    </div>
     <hr size="3">
     <h2 class="sub-title"><b>健身的10個好處</b></h2>
     <ol type="1" style="text-align: left;">
@@ -49,19 +119,22 @@
         <li>增加肌肉助於減肥</li>
     </ol>
     <hr size="3">
-    <h2>好文章連結</h2>
-    <li>
-        <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">健身初學者必看！10個常見的健身迷思</a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/">健身的10個好處！（這些好處說明你該健身了！）</a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/">健身的類型（找到適合你的健身方式！）</a>
-    </li>
+    <h2 class="sub-title">好文章連結</h2>
+    <div class="content" style="background-color: aquamarine; size: 24px;">
+        <li>
+            <a
+                href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">健身初學者必看！10個常見的健身迷思</a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/">健身的10個好處！（這些好處說明你該健身了！）</a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/">健身的類型（找到適合你的健身方式！）</a>
+        </li>
+    </div>
     <hr>
-    <h2>一天所需卡路里</h2>
-    <table border="1">
+    <h2 class="sub-title">一天所需卡路里</h2>
+    <table border="1" id="bmitable">
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -92,49 +165,57 @@
 
         </tbody>
     </table>
-    <b>
-        <a href="./bmi.html">計算BMI</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;</b>
-    一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-    <b>計算所需熱量:</b>
-    因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
+    <div style="text-align: left;margin-left: 24px;">
+        <b>
+            <a href="./bmi.html">計算BMI</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;</b>
+        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+        <b>計算所需熱量:</b>
+        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
+    </div>
     <hr>
     <h2 class="sub-title">健身照片</h2>
-    <img width="31%" src="img/pic-1.jpg" alt="圖片消失">
-    <img width="31%" src="img/pic-2.jpg" alt="">
-    <img width="31%" src="img/pic-3.jpg" alt="">
-    <iframe width="45%" height="360" src="https://www.youtube.com/embed/TtbrOIUYtGw"
-        title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="45%" height="365" src="https://www.youtube.com/embed/LmrKejHOaG4"
-        title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video controls src="video/file_example_MP4_640_3MG.mp4"></video>
+    <div id="image">
+        <img src="img/Image20250730193930.jpg" alt="圖片消失">
+        <img src="img/Image20250730193942.jpg" alt="圖片消失">
+        <img src="img/Image20250730193951.jpg" alt="圖片消失">
+    </div>
     <hr>
-    <h2 class="sub-title">表單</h2>
-    <h3>需要更多資訊?免費索取健身資訊</h3>
-    <p>前100名還贈送［我愛健身］書籍一本!</p>
+    <h2 class="sub-title">健身影片</h2>
+    <div>
+        <iframe width="45%" height="360" src="https://www.youtube.com/embed/TtbrOIUYtGw"
+            title="30分鐘 超慢跑｜初學節拍超慢跑｜180BPM｜暖身+伸展｜有音樂♫" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="45%" height="365" src="https://www.youtube.com/embed/LmrKejHOaG4"
+            title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video controls src="video/file_example_MP4_640_3MG.mp4"></video>
+    </div>
+    <hr>
+    <div id="form">
+        <h2 class="sub-title">表單</h2>
+        <h3>需要更多資訊?免費索取健身資訊</h3>
+        <p>前100名還贈送［我愛健身］書籍一本!</p>
 
+        <form action="">
+            <input type="checkbox" name="age">18歲
 
+            <select name="country" id="">
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+            </select>
 
-    <form action="">
-        <input type="checkbox" name="age">18歲
-
-        <select name="country" id="">
-            <option value="台北市">台北市</option>
-            <option value="新北市">新北市</option>
-            <option value="桃園市">桃園市</option>
-        </select>
-
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="test@gmail.com">
-        <p>您的寶貴意見!</p>
-        <textarea id="comment" name="comment" cols="30" rows="20"></textarea>
-        <br>
-        <button type="submit">送出</button>
-    </form>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="test@gmail.com">
+            <p>您的寶貴意見!</p>
+            <textarea id="comment" name="comment" cols="30" rows="20"></textarea>
+            <br>
+            <button type="submit">送出</button>
+        </form>
+    </div>
 </body>
 
 </html>
